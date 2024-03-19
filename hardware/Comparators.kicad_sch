@@ -1,0 +1,18 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid e15ef73e-4ade-48cf-98d3-82d9ba03cbd0)
+
+  (paper "A4")
+
+  (title_block
+    (title "BSPD")
+    (date "2019-06-02")
+    (rev "V3")
+    (company "PUT Motorsport")
+    (comment 1 "Eryk Miśkiewicz")
+  )
+
+  (lib_symbols
+  )
+
+)
