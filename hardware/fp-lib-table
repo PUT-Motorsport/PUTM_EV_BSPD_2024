@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Connector_9pin")(type "KiCad")(uri "${KIPRJMOD}/Connector_9pin")(options "")(descr ""))
+)
