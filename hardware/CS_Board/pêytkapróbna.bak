@@ -1,0 +1,290 @@
+EESchema Schematic File Version 4
+LIBS:płytkapróbna-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 5F3EB550
+P 5450 3150
+F 0 "J2" H 5530 3142 50  0000 L CNN
+F 1 "Conn_01x04" H 5530 3051 50  0000 L CNN
+F 2 "płytkapróbna:current_sensor" H 5450 3150 50  0001 C CNN
+F 3 "~" H 5450 3150 50  0001 C CNN
+	1    5450 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 1900 5100 1900
+$Comp
+L Regulator_Linear:LM1117-5.0 U1
+U 1 1 5FB6F095
+P 2900 3050
+F 0 "U1" H 2900 3292 50  0000 C CNN
+F 1 "LM1117-5.0" H 2900 3201 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223" H 2900 3050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 2900 3050 50  0001 C CNN
+	1    2900 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5FB6FA6D
+P 2350 3150
+F 0 "C1" H 2442 3196 50  0000 L CNN
+F 1 "C_Small" H 2442 3105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 2350 3150 50  0001 C CNN
+F 3 "~" H 2350 3150 50  0001 C CNN
+	1    2350 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5FB70740
+P 3400 3150
+F 0 "C2" H 3492 3196 50  0000 L CNN
+F 1 "C_Small" H 3492 3105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3400 3150 50  0001 C CNN
+F 3 "~" H 3400 3150 50  0001 C CNN
+	1    3400 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 3250 2350 3400
+Wire Wire Line
+	2350 3400 2900 3400
+Wire Wire Line
+	3400 3400 3400 3250
+Wire Wire Line
+	2900 3350 2900 3400
+Connection ~ 2900 3400
+Wire Wire Line
+	2900 3400 3400 3400
+$Comp
+L power:GND #PWR08
+U 1 1 5FB711CB
+P 2900 3400
+F 0 "#PWR08" H 2900 3150 50  0001 C CNN
+F 1 "GND" H 2905 3227 50  0000 C CNN
+F 2 "" H 2900 3400 50  0001 C CNN
+F 3 "" H 2900 3400 50  0001 C CNN
+	1    2900 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 3050 2350 3050
+Connection ~ 2350 3050
+Wire Wire Line
+	3200 3050 3400 3050
+Connection ~ 3400 3050
+Wire Wire Line
+	3400 3050 3450 3050
+$Comp
+L power:+5V #PWR05
+U 1 1 5FB71983
+P 3450 3050
+F 0 "#PWR05" H 3450 2900 50  0001 C CNN
+F 1 "+5V" H 3465 3223 50  0000 C CNN
+F 2 "" H 3450 3050 50  0001 C CNN
+F 3 "" H 3450 3050 50  0001 C CNN
+	1    3450 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR04
+U 1 1 5FB71F1D
+P 950 3050
+F 0 "#PWR04" H 950 2900 50  0001 C CNN
+F 1 "VCC" H 967 3223 50  0000 C CNN
+F 2 "" H 950 3050 50  0001 C CNN
+F 3 "" H 950 3050 50  0001 C CNN
+	1    950  3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 5FB744FE
+P 3950 1950
+F 0 "RV1" H 3881 1996 50  0000 R CNN
+F 1 "R_POT" H 3881 1905 50  0000 R CNN
+F 2 "Potentiometer_SMD:Potentiometer_Vishay_TS53YJ_Vertical" H 3950 1950 50  0001 C CNN
+F 3 "~" H 3950 1950 50  0001 C CNN
+	1    3950 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5FB74B54
+P 3950 2250
+F 0 "R1" H 4009 2296 50  0000 L CNN
+F 1 "R_Small" H 4009 2205 50  0000 L CNN
+F 2 "Diode_SMD:D_1206_3216Metric" H 3950 2250 50  0001 C CNN
+F 3 "~" H 3950 2250 50  0001 C CNN
+	1    3950 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 5FB75294
+P 3950 1650
+F 0 "R2" H 4009 1696 50  0000 L CNN
+F 1 "R_Small" H 4009 1605 50  0000 L CNN
+F 2 "Diode_SMD:D_1206_3216Metric" H 3950 1650 50  0001 C CNN
+F 3 "~" H 3950 1650 50  0001 C CNN
+	1    3950 1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5FB76086
+P 3950 2400
+F 0 "#PWR03" H 3950 2150 50  0001 C CNN
+F 1 "GND" H 3955 2227 50  0000 C CNN
+F 2 "" H 3950 2400 50  0001 C CNN
+F 3 "" H 3950 2400 50  0001 C CNN
+	1    3950 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 5FB76639
+P 3950 1500
+F 0 "#PWR01" H 3950 1350 50  0001 C CNN
+F 1 "+5V" H 3965 1673 50  0000 C CNN
+F 2 "" H 3950 1500 50  0001 C CNN
+F 3 "" H 3950 1500 50  0001 C CNN
+	1    3950 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2400 3950 2350
+Wire Wire Line
+	3950 2150 3950 2100
+Wire Wire Line
+	3950 1800 3950 1750
+Wire Wire Line
+	3950 1550 3950 1500
+Wire Wire Line
+	3800 1950 3550 1950
+Text GLabel 3550 1950 0    50   Input ~ 0
+Vref
+Text GLabel 4700 3050 0    50   Input ~ 0
+Vref
+$Comp
+L power:+5V #PWR07
+U 1 1 5FB7949A
+P 4700 3350
+F 0 "#PWR07" H 4700 3200 50  0001 C CNN
+F 1 "+5V" H 4715 3523 50  0000 C CNN
+F 2 "" H 4700 3350 50  0001 C CNN
+F 3 "" H 4700 3350 50  0001 C CNN
+	1    4700 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5FB7A1DB
+P 4700 3250
+F 0 "#PWR06" H 4700 3000 50  0001 C CNN
+F 1 "GND" H 4705 3077 50  0000 C CNN
+F 2 "" H 4700 3250 50  0001 C CNN
+F 3 "" H 4700 3250 50  0001 C CNN
+	1    4700 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4700 3250 5150 3250
+Wire Wire Line
+	5100 3150 5100 1900
+Wire Wire Line
+	5100 3150 5250 3150
+$Comp
+L Device:Fuse F1
+U 1 1 5FB7DF60
+P 1250 3050
+F 0 "F1" V 1053 3050 50  0000 C CNN
+F 1 "Fuse" V 1144 3050 50  0000 C CNN
+F 2 "Diode_SMD:D_SMB" V 1180 3050 50  0001 C CNN
+F 3 "~" H 1250 3050 50  0001 C CNN
+	1    1250 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1100 3050 950  3050
+Wire Wire Line
+	5150 3250 5150 2000
+Wire Wire Line
+	5150 2000 5350 2000
+Connection ~ 5150 3250
+Wire Wire Line
+	5150 3250 5250 3250
+$Comp
+L Device:D_Small D2
+U 1 1 5FB81B8E
+P 2000 3050
+F 0 "D2" H 2000 2845 50  0000 C CNN
+F 1 "D_Small" H 2000 2936 50  0000 C CNN
+F 2 "Diode_SMD:D_1206_3216Metric" V 2000 3050 50  0001 C CNN
+F 3 "~" V 2000 3050 50  0001 C CNN
+	1    2000 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D_Small D1
+U 1 1 5FB8260C
+P 1650 3050
+F 0 "D1" H 1650 2845 50  0000 C CNN
+F 1 "D_Small" H 1650 2936 50  0000 C CNN
+F 2 "Diode_SMD:D_1206_3216Metric" V 1650 3050 50  0001 C CNN
+F 3 "~" V 1650 3050 50  0001 C CNN
+	1    1650 3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2100 3050 2350 3050
+Wire Wire Line
+	1750 3050 1900 3050
+Wire Wire Line
+	1550 3050 1400 3050
+Wire Wire Line
+	4700 3350 5250 3350
+Wire Wire Line
+	4950 2100 5350 2100
+$Comp
+L power:VCC #PWR02
+U 1 1 5FB8491E
+P 4950 2100
+F 0 "#PWR02" H 4950 1950 50  0001 C CNN
+F 1 "VCC" H 4967 2273 50  0000 C CNN
+F 2 "" H 4950 2100 50  0001 C CNN
+F 3 "" H 4950 2100 50  0001 C CNN
+	1    4950 2100
+	1    0    0    -1  
+$EndComp
+Text GLabel 5100 3150 0    50   Input ~ 0
+Output
+$Comp
+L Connector:Conn_01x03_Female J1
+U 1 1 5FB93E82
+P 5550 2000
+F 0 "J1" H 5578 2026 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 5578 1935 50  0000 L CNN
+F 2 "" H 5550 2000 50  0001 C CNN
+F 3 "~" H 5550 2000 50  0001 C CNN
+	1    5550 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3050 5250 3050
+$EndSCHEMATC

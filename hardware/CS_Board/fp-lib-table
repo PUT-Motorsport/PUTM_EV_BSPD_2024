@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name płytkapróbna)(type KiCad)(uri ${KIPRJMOD}/płytkapróbna.pretty)(options "")(descr ""))
+  (lib (name Molex_microfit)(type KiCad)(uri "C:/Users/ja/OneDrive - student.put.poznan.pl/studia/put_motosport/Current_sensor_bspd/115150388_LIB_43650-0304/43650-0304/KiCad")(options "")(descr ""))
+)
