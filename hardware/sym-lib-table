@@ -1,4 +1,4 @@
 (sym_lib_table
   (version 7)
-  (lib (name "D369-G99-NP4")(type "KiCad")(uri "${KIPRJMOD}/Connector_9pin/D369-G99-NP4.kicad_sym")(options "")(descr ""))
+  (lib (name "D369-G99-NP4")(type "Legacy")(uri "${KIPRJMOD}/Libs/Connector_9pin/D369-G99-NP4.lib")(options "")(descr ""))
 )
